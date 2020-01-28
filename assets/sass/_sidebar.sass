@@ -1,0 +1,93 @@
+#sidebar
+	position: fixed
+	z-index: 2
+	width: 260px
+	left: 20px
+	top: 60px
+	-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+	border-radius: 10px
+	background: #152c46
+	height: calc(100vh - 120px)
+	-webkit-transition: all 0.4s ease 0s
+	transition: all 0.4s ease 0s
+	@media (min-width: 992px)
+		top: 25px
+		height: calc(100vh - 50px)
+	header
+		padding-top: 15px
+		text-align: center
+		p
+			font-size: 0.7rem
+			margin-bottom: 0
+			margin-top: 0.7rem
+	ul
+		margin: 0
+		padding: 0
+		list-style: none
+		li
+			margin-left: 30px
+			margin-right: 30px
+			a
+				display: block
+				color: $color-text
+				padding: 12px 5px
+				border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+				@media (min-width: 992px)
+					padding: 10px 5px
+			a:hover, a:active, a:focus
+				text-decoration: none
+				border-bottom: 1px solid #BF8850
+	.sidebar-btn
+		text-align: center
+		.btn-default
+			background: #BF8850
+			box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25)
+			border-radius: 45px
+			padding: 5px 15px
+			margin-top: 10px
+			color: $color-text
+			font-size: 14px
+			text-align: center
+			text-transform: uppercase
+	.search
+		.input_search
+			width: calc(100% - 40px)
+			background: 0 0
+			border: 1px solid #dddddd7a
+			border-radius: 15px
+			margin: 15px 20px 0
+			outline: 0
+			padding: 5px 20px
+			font-size: 12px
+	.hot-action
+		background: url('/wp-content/themes/vek-otau/assets/img/rectangle.png') no-repeat center
+		width: 120%
+		margin-left: -20px
+		height: 43px
+		text-align: center
+		a
+			font-weight: bold
+			line-height: normal
+			font-size: 12px
+			text-transform: uppercase
+			color: $color-text
+			display: block
+			padding: 13px 10px
+		a:hover
+			color: $color-text
+			text-decoration: none
+	.phone
+		padding: 5px 10px
+		color: $color-text
+		a
+			font-size: 18px
+			text-transform: uppercase
+			text-decoration: none
+			color: $color-text
+			span
+				text-transform: inherit
+		a:hover
+			color: $color-text
+			text-decoration: none
+			border: none
